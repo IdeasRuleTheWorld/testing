@@ -1,0 +1,125 @@
+.off-canvas-wrapper
+	.off-canvas-wrapper-inner(data-off-canvas-wrapper='')
+		#offCanvasRight.off-canvas.position-right(data-off-canvas='',data-position='right')
+			i.close-icon(aria-label='Close menu', type='button', data-close='')
+					svg(viewbox='0 0 100 100')
+						use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_close')
+		
+			ul.vertical.menu
+				li.device-search.columns.medium-6.small-16.show-for-small.hide-for-large.hide-for-medium
+					span.search.columns.small-4
+					input.columns.small-11(type='search', placeholder='Search')
+				li
+					ul.menu.mobile-menu.vertical.columns.show-for-small.hide-for-large.hide-for-medium
+						li
+							a(href='#') Practices & Expertises
+						li
+							a.active(href='#') Domaines d’intervention
+						li
+							a(href='#') Publications
+						li
+							a(href='#') Carrières
+				li
+					a(href='#') Foundation
+				li
+					a(href='#') Dot
+				li
+					a(href='#') ZURB
+				li
+					a(href='#') Com
+				li
+					ul.vertical.menu.accord-menu(data-accordion-menu)
+						li
+							a(href="#") Slash 
+											i.dropdown-icon
+												svg(viewbox="0 0 100 100")
+													use(xmlns:xlink='http://www.w3.org/1999/xlink',xlink:href='#icon_caret--right')
+							ul.menu.vertical.nested.accord-menu
+								li
+									a(href="#") splash_primary
+								li
+									a(href="#") splash_seconda
+						li
+							a(href="#") Slash-demo
+
+				li
+					a(href='#') Sites
+			ul.bottom
+				li
+					a(href='http://twitter.com/cognizant', target='_blank')
+						svg(viewbox='0 0 100 100')
+							use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_twitter')
+					a(href='http://www.facebook.com/Cognizant', target='_blank')
+						svg(viewbox='0 0 100 100')
+							use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_facebook')
+					a(href='http://www.cognizant.com/Pages/rss.aspx', target='_blank')
+						svg(viewbox='0 0 100 100')
+							use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_rss')
+					a(href='http://www.cognizant.com/', target='_blank')
+						svg(viewbox='0 0 100 100')
+							use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_email')
+					a(href='http://www.linkedin.com/company/cognizant', target='_blank')
+						svg(viewbox='0 0 100 100')
+							use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_linkedin')
+		.row.expanded 
+			.off-canvas-content(data-off-canvas-content='')
+				.top-bar.cog-cmds-topbar.columns.large-16.medium-16.small-16
+					#responsive-menu
+						.columns.medium-9.small-8.large-8.top-bar-left.hide-for-small
+							.top-bar-title
+								span(data-responsive-toggle='responsive-menu', data-hide-for='medium')
+									button.menu-icon.dark(type='button', data-toggle='')
+								strong Cognizant.com |
+							ul.float-left(data-dropdown-menu='')
+								li
+									a(href='#') Industries
+								li
+									a(href='#') Solutions
+								li
+									a(href='#') Digital
+								li
+									a(href='#') Latest Thinking
+						.columns.medium-4.small-8.large-8.top-bar-right.primary.hide-for-small|		
+																	
+								ul.dropdown.menu.columns.medium-10.large-10(data-dropdown-menu='')
+									li.pipe
+										||								
+									li.header-search.search(data-toggle="search-pattern")
+										ul.callout#search-pattern(data-toggler,data-animate="spin-out")
+											li Search this site
+											li Search Cognizant.com
+											li Search all Cognizant sites
+									li|									
+										ul.menu
+											li
+												a(href='#') Item 1A
+									li.columns.medium-6.large-8
+										input(type='search', placeholder='Search')
+		.row.expanded
+			.cogv1-cmds-page.columns.medium-13.large-16.medium-centered.small-centered
+				.top-bar
+					.top-bar-title.logo
+						// span(data-responsive-toggle='responsive-menu', data-hide-for='medium')
+							// button.menu-icon.dark(type='button', data-toggle='')
+						// strong Cognizant.com
+						img(src="images/logo.png")
+					#responsive-menu.sub-menu.columns.small-2.large-11.medium-10
+						.top-bar-left
+							ul.dropdown.menu.hide-for-medium-only.hide-for-small-only.show-for-large(data-dropdown-menu='')
+								li
+									label.pipe.grey
+										||
+								li
+									a(href='#') Practices & Expertises
+								li
+									a.active(href='#') Domaines d’intervention
+								li
+									a(href='#') Publications
+								li
+									a(href='#') Carrières
+						.top-bar-right
+							ul.menu
+								li
+									button.button(type='button' data-toggle="offCanvasRight")
+		.row.expanded|			
+				hr.seperator

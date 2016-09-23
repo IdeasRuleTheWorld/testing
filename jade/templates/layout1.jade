@@ -1,0 +1,45 @@
+doctype html
+html.no-js(lang='')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
+		title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='css/app.css')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js')
+		block head
+
+	body
+		div.cognizant-cmds-container
+
+			.cog-cmds-page
+				block content
+
+			block footer
+			footer
+				.footer--top
+					.container
+						.row
+							.footer__social-list
+								.container
+									.row
+										each val, index in [{name: 'linkedin'},{name: 'twitter'},{name: 'facebook'},{name: 'rss'}]
+											a(href="")
+												svg(viewbox='0 0 100 100')
+													use(xlink:href='#icon_#{val.name}')
+							.footer__subnav
+								.container
+									.row
+										a(href="#", target="_blank") Sitemap
+										a(href="#", target="_blank") Legal
+										a(href="#", target="_blank") Privacy Policy
+										a(href="#", target="_blank") Cookie Policy
+										span &#64;2015 Cognizant, all rights reserved
+				//- .footer--bottom
+
+			browsersync
+			block scripts
+			script(src='../../js/vendor.min.js')
+			script(src='js/industries.js')
