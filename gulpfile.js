@@ -8,6 +8,7 @@ var postcss=require('gulp-postcss')
 var sourcemaps = require('gulp-sourcemaps')
 var autoprefixer = require('gulp-autoprefixer')
 var jsbeautify = require('gulp-jsbeautify')
+var cssbeautify = require('gulp-cssbeautify')
 
 function onError(err){
   console.log.beep();
@@ -54,6 +55,10 @@ gulp.task('scss-compile', function(){
   .pipe(concat('app.css'))
   .pipe(autoprefixer())
   .pipe(sourcemaps.write())
+  .pipe(cssbeautify({
+    indent:' ',
+    autosemicolon:true
+  }))
   .pipe(gulp.dest('./app/css'))
 });
 
