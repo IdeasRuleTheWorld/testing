@@ -4,7 +4,7 @@ var concat = require('gulp-concat')
 var accord = require('gulp-accord')
 var plumber = require('gulp-plumber')
 var browserSync = require('browser-sync')
-var postcss=require('gulp-postcss')
+var postcss = require('gulp-postcss')
 var sourcemaps = require('gulp-sourcemaps')
 var autoprefixer = require('gulp-autoprefixer')
 var jsbeautify = require('gulp-jsbeautify')
@@ -31,7 +31,7 @@ gulp.task('jade-compile', function(){
 gulp.task('image-render',function(){
   gulp.src(['src/images/**/*.jpg','src/images/**/*.png'])
     .pipe(plumber())
-    .pipe(gulp.dest('app/images'))
+    .pipe(gulp.dest('app/content/dam/cognizant_foundation/images'))
 })
 
 /* scss compile*/
