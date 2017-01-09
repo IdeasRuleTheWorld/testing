@@ -1,0 +1,144 @@
+{
+    "caseId": "caseid",
+    "companyName": "companyName",
+    "uenNumber": "uenNumber",
+    "regOfcAddr": {
+        "addrLine2": "line2",
+        "city": "city",
+        "state": "state",
+        "country": "country",
+        "pinCode": "pinCode"
+    },
+    "dateOfReg": "dateOfReg",
+    "companyType": "companyType",
+    "countryOfIncorp": "countryofIncorp",
+    "principalActivities": [
+        "principalActivity1",
+        "principalActivity2"
+    ],
+    "director": [
+        {
+            "name": "name",
+            "id": "id",
+            "addr": {
+                "addrLine1": "line1",
+                "addrLine2": "line2",
+                "city": "city",
+                "state": "state",
+                "country": "country",
+                "pinCode": "pinCode"
+            },
+            "dateOfAddrChange": "dateofAddrChange",
+            "nationality": "nationality",
+            "dateOfAppointment": "dateofAppointment",
+            "positionHeld": "positionHeld",
+            // "NRICPassport": "",
+            // "designation": ""
+        }
+    ],
+    "capitalStructure": {
+        "capitalStructure": "capitalStructure",
+        "numOfShares": "numOfShares",
+        "currency": "currency",
+        "amount": "amount"
+    },
+    "shareholder": {
+        "name": "name",
+        "id": "id",
+        "nationality": "nationality",
+        "addr": {
+            "addrLine1": "line1",
+            "addrLine2": "line2",
+            "city": "city",
+            "state": "state",
+            "country": "country",
+            "pinCode": "pinCode"
+        },
+        "dateOfAddrChange": "dateofAddrChange",
+        "type": "type",
+        "numOfShares": "numOfShares",
+        "currency": "currency",
+        // "dob": "dob"
+    },
+    "complianceRecord": {
+        "lastAGM": "dateOfLastAGM",
+        "lastAR": "dateOfLastAR",
+        "ACLaidAtLastAGM": "dateACLaidAtLastAGM"
+    },
+    "audit": {
+        "name": "name",
+        "appointment": "dateofAppointment"
+    },
+    "keyFinInfo": {
+        "finYear": "forFinancialYear",
+        "salesTurnover": "salesTurnover",
+        "audited": "audited",
+        "numOfEmp": "numOfEmp",
+        "commercialPropsOwned": "commercialPropertiesOwned"
+    },
+    "litigationSearch": {
+        "amount": "amount",
+        "partyType": "partyType",
+        "name": "name",
+        "id": "id",
+        "solicitor": "solicitor",
+        "court": "court",
+        "caseNum": "caseNum",
+        "year": "year",
+        "filingDate": "filingDate",
+        "caseStatus": "caseStatus",
+        "cause": "cause",
+        "lastKnownDocOrRemark": "lastKnownDocumentRemark",
+        "lastKnownDocOrRemarkDate": "lastKnownDocumentRemarksDate",
+        "lastKnownHearingResult": "lastKnownHearingResult",
+        "lastKnownHearingResultDate": "lastKnownHearingResultDate",
+        "lastUpdatedinDPInfo": "lastUpdatedinDPInfoDatabase",
+        "totalNum": "totalNumber"
+    },
+    "windingUp": {
+        "amount": "amount",
+        "partyType": "partyType",
+        "name": "name",
+        "id": "id",
+        "solicitor": "solicitor",
+        "court": "court",
+        "caseNum": "caseNum",
+        "year": "year",
+        "filingDate": "filingDate",
+        "caseStatus": "caseStatus",
+        "cause": "cause",
+        "lastKnownDocOrRemark": "lastKnownDocumentRemark",
+        "lastKnownDocOrRemarksDate": "lastKnownDocumentRemarksDate",
+        "lastKnownHearingResult": "lastKnownHearingResult",
+        "lastKnownHearingResultDate": "lastKnownHearingResultDate",
+        "lastUpdatedinDPInfo": "lastUpdatedinDPInfoDatabase",
+        "totalNum": "totalNumber"
+    },
+    "accreditations": {
+        "serialNum": "serialNum",
+        "award": "award",
+        "year": "year",
+        "ranking": "ranking"
+    },
+    "financialRelatedSearchCount": {
+        "year": "year",
+        "total": "total",
+        "month": [
+            {
+                "jan": 0,
+                "feb": 1
+            }
+        ]
+    },
+    "commercialRelatedSearchCount": {
+        "year": "year",
+        "total": "total",
+        "month": [
+            {
+                "jan": 0,
+                "feb": 1
+            }
+        ]
+    },
+    "status": "success"
+}
