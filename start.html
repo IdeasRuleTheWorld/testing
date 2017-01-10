@@ -1,0 +1,58 @@
+<html>
+<head>
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script src="js/can.jquery.js"></script>
+    <script src="js/can.map.setter.js"></script>
+    <script src="js/can.fixture.js"></script>
+    <script src="js/can.object.js"></script>
+    <script src="js/can.construct.proxy.js"></script>
+
+    <script src="js/ejs/ejs.min.js"></script>
+        
+</head>
+<body>
+
+    <style>
+      .selected a{color:red;font-weight: bold;}
+      ul{padding:0px;margin:0px;}
+      .hidden{display:none;}
+      .show{display:block;}
+    </style>
+
+<div id="app"></div>
+
+
+<script>
+  var people = ['geddy', 'neil', 'alex'],
+      html = ejs.render('<%= people.join(", "); %>', {people: people});
+      $("#people").append(html)
+</script>
+
+
+<script id="base-template">
+        html=ejs.render('<div style="display:flex;flex-direction:row;"><div class="step-indicator" style="width:30%;height:auto;border:1px solid black;"></div><div id="right-side" style="width:70%;height:auto;border:1px solid black;"><div  style="padding:30px;"><prev></prev><next></next></div><div  style="padding:30px;"></div></div></div>');
+        
+</script>
+
+
+<!-- Step indicator -->
+<script id="step-indicator">
+	stepindicator=ejs.render('<ul> <li class="selected"><a href="">Login</a></li><li><a href="">Personal_details</a></li><li><a href="">Business_details</a></li><li><a href="">Preferences</a></li></ul>');
+	$("#app").append(html);
+	$(".step-indicator").append(stepindicator);
+</script>
+
+
+<!-- login template-->
+<script id="login-template">
+  login = ejs.render('<div id="login" style="display:flex;flex-direction:column;padding:10px;"><div style="width:100%:height:30px;"><label>Username</label><input type="text" placeholder="name" /></div><div  style="width:100%;height:30px;"><label>Password</label><input type="password" placeholder="password"/></div></div>');
+  $("#right-side").append(login);
+</script>
+
+
+
+
+
+</body>
+
+</html>
