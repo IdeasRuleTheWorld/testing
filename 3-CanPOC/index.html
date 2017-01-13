@@ -58,6 +58,7 @@
         </ul>
       </script>
 
+
     <!-- login template-->
       <script type="text/mustache" id="login-template">
           <div  id="login" style="display:flex;flex-direction:column;padding:10px;">
@@ -71,6 +72,7 @@
               </div>
           </div>
       </script>
+
 
       <!-- personal details template-->
       <script type="text/mustache" id="personal-details-template">
@@ -87,6 +89,7 @@
           </div>
         </script>
 
+
         <!-- business template -->
         <script type="text/mustache" id="business-details-template">
           <div  id="business-details" style="display:flex;flex-direction:column;padding:10px;">
@@ -102,6 +105,7 @@
           </div>
         </script>
 
+
         <!-- preferences template -->
         <script type="text/mustache" id="preferences-template">
           <div  id="preferences" style="padding:10px;">
@@ -112,6 +116,7 @@
               </ul>
           </div>
         </script>
+
 
         <!-- Prev-Next template -->
         <script type="text/mustache" id="prev-template">
@@ -126,9 +131,6 @@
         <script type="text/mustache" id="submit-template">
           <input type="submit"/>
         </script>
-
-
-
 
 <script>
   can.fixture({
@@ -228,7 +230,5 @@
   var fragment = can.view("app-template")
   $("#app").html(fragment);
 </script>
-
-
   </body>
 </html>

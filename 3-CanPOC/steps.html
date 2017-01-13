@@ -7,14 +7,18 @@
     <script src="js/can.fixture.js"></script>
     <script src="js/can.object.js"></script>
     <script src="js/can.construct.proxy.js"></script>
-        
+    <script src="js/ejs/ejs.min.js"></script>
 </head>
+
 <body>
 <table id='websites'></table>
 <div id='nextprev'></div>
 <div id='pagecount'></div>
+<div id="todos"></div>
 
 <!-- TEMPLATES -->
+
+
 <script id="nextPrevStache" type="text/mustache">
   <a href="javascript://" 
      class="prev {{#paginate.canPrev}}enabled{{/paginate.canPrev}}">Prev</a>
@@ -22,9 +26,11 @@
      class="next {{#paginate.canNext}}enabled{{/paginate.canNext}}">Next</a>
 </script>
 
+
 <script id="pageCountStache" type="text/mustache">
 Page <span>{{page}}</span> of <span>{{pageCount}}</span>.
 </script>
+
 
 <script id="websiteStache" type="text/mustache">
   <thead>

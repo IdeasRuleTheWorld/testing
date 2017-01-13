@@ -170,6 +170,7 @@
     
     // Setup a pretty route that defaults to page=1
 	can.route(":page",{page: "1"});
-        
+
+
     
 })();
